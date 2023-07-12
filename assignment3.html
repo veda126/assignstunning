@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<main>
+    <header>
+      <nav class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img src="https://i.ibb.co/KNXmLfY/box-logo.png" alt="box-logo" />
+        </a>
+        <div class="nav-items">
+          <a href="#" class="nav-active">Plans</a>
+          <a href="#">Blog</a>
+          <a href="#">Job</a>
+          <a href="#">Features</a>
+        </div>
+        <div class="reg-container">
+        <a href="#" class="btn-sign">Sign in</a>
+        </div>
+      </nav>
+    </header>
+    <style>
+     * {
+  transition: all 0.2s;
+  
+}
+
+body {
+  background-color: #edf1f5;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background-color: #fdfdfd;
+  width: 960px;
+  height: 660px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  box-shadow: 1px 10px 80px 2px #e2e7ea;
+}
+
+.nav-wrapper {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+}
+
+.nav-items {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo {
+  flex-basis: 150px;
+}
+
+.brand-logo img {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.nav-active {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.nav-items a {
+  color: #c0bfc0;
+  margin: 0 20px;
+  font-size: 13px;
+}
+
+.nav-items a:hover {
+  color: #000;
+}
+
+.btn-sign {
+  background-color: #000;
+  margin-right: 40px;
+  padding: 14px 34px;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 12px;
+}
+
+.reg-container:hover .btn-sign {
+  background-color: #353535;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.col-50 {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.col-45 {
+  width: 45%;
+}
+
+.left-container {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.feature-section {
+  margin: 20px 0;
+}
+
+.landing img {
+  width: 460px;
+  margin-top: 50px;
+}
+
+.getstarted-section {
+  margin: 30px 0;
+}
+
+.btn-feature {
+  background-color: #ffe1f9;
+  color: #6a7cff;
+  padding: 8px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+.feature-section:hover .btn-feature {
+  background-color: #ffd1f6;
+}
+
+.btn-getstarted {
+  background-color: #6a7cff;
+  color: #fff;
+  padding: 16px 30px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
+.getstarted-section:hover .btn-getstarted {
+  background-color: #4258f5;
+}
+
+.main-title {
+  font-size: 56px;
+  line-height: 58px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.main-desc {
+  color: #aeaeae;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.arrow {
+  cursor: pointer;
+  display: flex;
+  margin-top: 80px;
+}
+
+.arrow-active {
+  background: #6a7cff !important;
+}
+
+.arrow-background {
+  width: 14px;
+  height: 14px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px #ccc;
+}
+
+.creative-title {
+  display: flex;
+  margin-left: 60px;
+  margin-top: -6px;
+}
+
+.craetive-num {
+  font-size: 12px;
+  color: #6a7cff;
+  font-weight: 500;
+}
+
+.creative-desc {
+  margin-left: 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.left-arrow {
+  width: 20px;
+  height: 14px;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA0OTIgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTIgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ2NC4zLDIwNy40bDAuOCwwLjJIMTM1LjlsMTAzLjUtMTAzLjdjNS4xLTUuMSw3LjgtMTEuOSw3LjgtMTkuMWMwLTcuMi0yLjgtMTQtNy44LTE5LjFsLTE2LjEtMTYuMQ0KCQkJYy01LjEtNS4xLTExLjgtNy45LTE5LTcuOWMtNy4yLDAtMTQsMi44LTE5LDcuOEw3LjgsMjI2LjlDMi44LDIzMiwwLDIzOC44LDAsMjQ2YzAsNy4yLDIuOCwxNCw3LjgsMTkuMWwxNzcuNCwxNzcuNA0KCQkJYzUuMSw1LjEsMTEuOCw3LjgsMTksNy44YzcuMiwwLDEzLjktMi44LDE5LTcuOGwxNi4xLTE2LjFjNS4xLTUuMSw3LjgtMTEuOCw3LjgtMTljMC03LjItMi44LTEzLjYtNy44LTE4LjdMMTM0LjcsMjg0LjRoMzMwDQoJCQljMTQuOCwwLDI3LjMtMTIuOCwyNy4zLTI3LjZWMjM0QzQ5MiwyMTkuMiw0NzkuMiwyMDcuNCw0NjQuMywyMDcuNHoiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==");
+  background-repeat: no-repeat;
+}
+
+.right-arrow {
+  width: 20px;
+  height: 14px;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ5Mi4wMDQgNDkyLjAwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkyLjAwNCA0OTIuMDA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQ4NC4xNCwyMjYuODg2TDMwNi40Niw0OS4yMDJjLTUuMDcyLTUuMDcyLTExLjgzMi03Ljg1Ni0xOS4wNC03Ljg1NmMtNy4yMTYsMC0xMy45NzIsMi43ODgtMTkuMDQ0LDcuODU2bC0xNi4xMzIsMTYuMTM2DQoJCQljLTUuMDY4LDUuMDY0LTcuODYsMTEuODI4LTcuODYsMTkuMDRjMCw3LjIwOCwyLjc5MiwxNC4yLDcuODYsMTkuMjY0TDM1NS45LDIwNy41MjZIMjYuNThDMTEuNzMyLDIwNy41MjYsMCwyMTkuMTUsMCwyMzQuMDAyDQoJCQl2MjIuODEyYzAsMTQuODUyLDExLjczMiwyNy42NDgsMjYuNTgsMjcuNjQ4aDMzMC40OTZMMjUyLjI0OCwzODguOTI2Yy01LjA2OCw1LjA3Mi03Ljg2LDExLjY1Mi03Ljg2LDE4Ljg2NA0KCQkJYzAsNy4yMDQsMi43OTIsMTMuODgsNy44NiwxOC45NDhsMTYuMTMyLDE2LjA4NGM1LjA3Miw1LjA3MiwxMS44MjgsNy44MzYsMTkuMDQ0LDcuODM2YzcuMjA4LDAsMTMuOTY4LTIuOCwxOS4wNC03Ljg3Mg0KCQkJbDE3Ny42OC0xNzcuNjhjNS4wODQtNS4wODgsNy44OC0xMS44OCw3Ljg2LTE5LjFDNDkyLjAyLDIzOC43NjIsNDg5LjIyOCwyMzEuOTY2LDQ4NC4xNCwyMjYuODg2eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K");
+  background-repeat: no-repeat;
+}
+
+
+
+Resources1× 0.5× 0.25×Rerun
+    </style>
+  
+    <div class="wrapper">
+      <div class="col-45 left-container">
+        <div class="feature-section">
+          <a href="#" class="btn-feature">New Feature</a>
+        </div>
+        <div class="title-container">
+          <p class="main-title">stunning<br>Workspace.</p>
+          <p class="main-desc">For each execution of a job.</p>
+        </div>
+        <div class="getstarted-section">
+          <a href="#" class="btn-getstarted">Get Started</a>
+        </div>
+        <div>
+          <div class="arrow">
+            <div class="arrow-background arrow-active">
+              <div class="left-arrow"></div>
+            </div>
+  
+            <div class="arrow-background" style="margin-left:10px;">
+              <div class="right-arrow"></div>
+            </div>
+            <div class="creative-title">
+              <p class="craetive-num">01.</p>
+              <p class="creative-desc">Creative<br>Workspace Vol.2
+                <p />
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-50">
+        <div class="landing">
+          <img src="https://i.ibb.co/JBhqNNC/landing-section.png" alt="landing-section" />
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</html>>
+  
+  
+  
